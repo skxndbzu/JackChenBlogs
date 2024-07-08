@@ -1,0 +1,115 @@
+import {sidebar} from "vuepress-theme-hope";
+
+export default sidebar({
+    "/": [
+        "",
+        {
+            text: "必看",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "面试专栏",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "Java",
+            icon: "book",
+            prefix: "posts/studyNotes/",
+            collapsible: true,
+            children: "structure",
+        },
+        {
+            text: "系统设计",
+            icon: "design",
+            prefix: "posts/",
+            collapsible: true,
+            children: [
+                {
+                    text: "香蕉",
+                    prefix: "banana/",
+                    icon: "basic",
+                    collapsible: true,
+                    children: [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                    ],
+                },
+                {
+                    text: "苹果",
+                    prefix: "apple/",
+                    icon: "security-fill",
+                    collapsible: true,
+                    children: [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                    ],
+                },
+            ],
+        },
+        {
+            text: "数据库",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "开发工具",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "常用框架",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "系统设计",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "分布式",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "高性能",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
+            text: "高可用",
+            icon: "laptop-code",
+            prefix: "demo/",
+            link: "demo/",
+            children: "structure",
+        },
+        "intro",
+        {
+            text: "幻灯片",
+            icon: "person-chalkboard",
+            link: "https://plugin-md-enhance.vuejs.press/zh/guide/content/revealjs/demo.html",
+        },
+    ],
+});
