@@ -9,8 +9,8 @@ heroFullScreen: true
 tagline: 程序员麻花
 projects:
   - icon: project
-    name: 项目名称
-    desc: 项目详细描述
+    name: 麻花club
+    desc: 专为程序员量身打造的社区交流平台
     link: https://你的项目链接
 
   - icon: link

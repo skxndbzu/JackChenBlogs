@@ -31,6 +31,13 @@ export default sidebar({
             children: "structure",
         },
         {
+            text: "计算机基础",
+            icon: "book",
+            prefix: "posts/计算机基础/",
+            collapsible: true,
+            children: "structure",
+        },
+        {
             text: "系统设计",
             icon: "book",
             prefix: "posts/系统设计/",
