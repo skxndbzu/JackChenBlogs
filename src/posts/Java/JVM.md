@@ -3,7 +3,7 @@ title: JVM
 icon: pen-to-square
 date: 2022-01-01
 category:
-  - JVM
+  - JVM虚拟机
 tag:
   - 字节码
   - 生命周期
