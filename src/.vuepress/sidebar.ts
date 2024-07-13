@@ -69,6 +69,14 @@ export default sidebar({
             children: "structure",
         },
         {
+            text: "前端",
+            icon: "laptop-code",
+            collapsible: true,
+            prefix: "posts/前端/",
+            link: "demo/",
+            children: "structure",
+        },
+        {
             text: "系统设计",
             prefix: "posts/系统设计/",
             collapsible: true,

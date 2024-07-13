@@ -84,7 +84,7 @@ HTML 标签可以拥有属性
 
 ### 结构
 
-![HTML结构](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML结构.png)
+![HTML结构](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E7%BB%93%E6%9E%84.png)
 
 文档结构介绍：
 
@@ -306,7 +306,7 @@ HTML 标签可以拥有属性
 
 **效果如下**：
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML文本标签效果图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE%E6%95%88%E6%9E%9C%E5%9B%BE.png)
 
 
 
@@ -384,7 +384,7 @@ target属性取值:
 
 效果图：
 
-<img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML超链接效果图.png" style="zoom: 67%;" />
+<img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E8%B6%85%E9%93%BE%E6%8E%A5%E6%95%88%E6%9E%9C%E5%9B%BE.png" style="zoom: 67%;" />
 
 ***
 
@@ -519,7 +519,7 @@ button标签：表示按钮
 
 使用方式：以name属性值作为键，value属性值作为值，构成键值对提交到服务器，多个键值对浏览器使用`&`进行分隔。
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML标签input属性-name-value.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E6%A0%87%E7%AD%BEinput%E5%B1%9E%E6%80%A7-name-value.png)
 
 
 
@@ -607,7 +607,7 @@ button标签：表示按钮
 </html>
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML标签input属性-type.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E6%A0%87%E7%AD%BEinput%E5%B1%9E%E6%80%A7-type.png)
 
 
 
@@ -665,7 +665,7 @@ button标签：表示按钮
 </body>
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML标签select和文本域属性.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E6%A0%87%E7%AD%BEselect%E5%92%8C%E6%96%87%E6%9C%AC%E5%9F%9F%E5%B1%9E%E6%80%A7.png)
 
 ***
 
@@ -709,7 +709,7 @@ button标签：表示按钮
 * tr：table row，表示表中单元的行    
 * td：table data，表示表中一个单元格    
 * th：table header，表格单元格的表头，通常字体样式加粗居中
-* ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML表格标签.png)
+* ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.png)
 
 
 
@@ -797,7 +797,7 @@ button标签：表示按钮
 
 效果图：
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML表格标签跨行跨列效果图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE%E8%B7%A8%E8%A1%8C%E8%B7%A8%E5%88%97%E6%95%88%E6%9E%9C%E5%9B%BE.png)
 
 
 
@@ -880,7 +880,7 @@ background属性用来设置背景相关的样式。
   </html>
   ```
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML背景图.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E8%83%8C%E6%99%AF%E5%9B%BE.png)
 
 
 
@@ -900,7 +900,7 @@ background属性用来设置背景相关的样式。
   }
   ```
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML背景设计.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E8%83%8C%E6%99%AF%E8%AE%BE%E8%AE%A1.png)
 
 ***
 
@@ -924,7 +924,7 @@ background属性用来设置背景相关的样式。
   <div>right</div>
   ```
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML-div简单布局.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML-div%E7%AE%80%E5%8D%95%E5%B8%83%E5%B1%80.png)
 
 
 
@@ -1032,7 +1032,7 @@ background属性用来设置背景相关的样式。
   </html>
   ```
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML-div基本布局.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML-div%E5%9F%BA%E6%9C%AC%E5%B8%83%E5%B1%80.png)
 
 
 
@@ -1051,7 +1051,7 @@ background属性用来设置背景相关的样式。
 | **article** | 文章元素 | 表示独立内容区域 | 标签定义的内容本身必须是有意义且必须独立于文档的其他部分 |
 | **footer**  | 页脚元素 | 表示页面的底部   | 块元素，文档中可以定义多个                               |
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/语义化标签结构图.jpg)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE%E7%BB%93%E6%9E%84%E5%9B%BE.jpg)
 
 
 
@@ -1128,7 +1128,7 @@ background属性用来设置背景相关的样式。
 </html>
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTML标签video.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTML%E6%A0%87%E7%AD%BEvideo.png)
 
 
 
@@ -1205,7 +1205,7 @@ CSS是一门基于规则的语言—你能定义用于你的网页中**特定元
 }
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS的组成.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS%E7%9A%84%E7%BB%84%E6%88%90.png)
 
 
 
@@ -1680,7 +1680,7 @@ h1 {
 </body>
 ```
 
-<img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS-边框样式效果图.png" style="zoom:80%;" />
+<img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS-%E8%BE%B9%E6%A1%86%E6%A0%B7%E5%BC%8F%E6%95%88%E6%9E%9C%E5%9B%BE.png" style="zoom:80%;" />
 
 
 
@@ -1712,7 +1712,7 @@ h1 {
 </html>
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS边框轮廓效果图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS%E8%BE%B9%E6%A1%86%E8%BD%AE%E5%BB%93%E6%95%88%E6%9E%9C%E5%9B%BE.png)
 
 ***
 
@@ -1724,7 +1724,7 @@ h1 {
 
 盒子模型是通过设置**元素框**与**元素内容**和**外部元素**的边距，而进行布局的方式。
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS盒子模型.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B.png)
 
 - element : 元素。
 - padding : 内边距，也有资料将其翻译为填充。
@@ -1820,7 +1820,7 @@ h1 {
   </div
   ```
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS盒子模式-效果图1.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%BC%8F-%E6%95%88%E6%9E%9C%E5%9B%BE1.png)
 
 
 
@@ -1843,7 +1843,7 @@ h1 {
   </style>
   ```
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS盒子模式-效果图2.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%BC%8F-%E6%95%88%E6%9E%9C%E5%9B%BE2.png)
 
 
 
@@ -1896,7 +1896,7 @@ span{
 <span>微信</span>
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/CSS-文本样式效果图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/CSS-%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F%E6%95%88%E6%9E%9C%E5%9B%BE.png)
 
 
 
@@ -2222,7 +2222,7 @@ HTTP 和 HTTPS 的区别：
 
 HTTPS 工作流程：服务器端的公钥和私钥，用来进行非对称加密，客户端生成的随机密钥，用来进行对称加密
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTTP-HTTPS加密过程.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTTP-HTTPS%E5%8A%A0%E5%AF%86%E8%BF%87%E7%A8%8B.png)
 
 1. 客户端向服务器发起 HTTPS 请求，连接到服务器的 443 端口，请求携带了浏览器支持的加密算法和哈希算法，协商加密算法
 2. 服务器端会向数字证书认证机构注册公开密钥，认证机构**用 CA 私钥**对公开密钥做数字签名后绑定在数字证书（又叫公钥证书，内容有公钥，网站地址，证书颁发机构，失效日期等）
@@ -2257,7 +2257,7 @@ HTTPS 工作流程：服务器端的公钥和私钥，用来进行非对称加�
 
   * POST
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTTP请求部分.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTTP%E8%AF%B7%E6%B1%82%E9%83%A8%E5%88%86.png)
 
   * GET
 
@@ -2364,7 +2364,7 @@ HTTPS 工作流程：服务器端的公钥和私钥，用来进行非对称加�
 
 响应部分图：
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTTP响应部分.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTTP%E5%93%8D%E5%BA%94%E9%83%A8%E5%88%86.png)
 
 
 
@@ -2377,7 +2377,7 @@ HTTPS 工作流程：服务器端的公钥和私钥，用来进行非对称加�
   OK：状态码描述
 
   * 响应状态码：
-    ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/HTTP状态响应码.png)
+    ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/HTTP%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94%E7%A0%81.png)
 
     | 状态码  | 说明                                               |
     | ------- | -------------------------------------------------- |
@@ -2490,11 +2490,11 @@ Web，在计算机领域指网络。像我们接触的 `WWW`，它是由 3 个�
 部署方式划分：一体化架构，垂直拆分架构，分布式架构，流动计算架构，微服务架构。
 
 * C/S结构：客户端—服务器的方式。其中C代表Client，S代表服务器。C/S结构的系统设计图如下：
-  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/JavaEE-CS结构图.jpg" style="zoom:67%;" />
+  <img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/JavaEE-CS%E7%BB%93%E6%9E%84%E5%9B%BE.jpg" style="zoom:67%;" />
 
 * B/S结构是浏览器—服务器的方式。B代表Browser，S代表服务器。B/S结构的系统设计图如下：
 
-  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/JavaEE-BS结构图.jpg" style="zoom:67%;" />
+  <img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/JavaEE-BS%E7%BB%93%E6%9E%84%E5%9B%BE.jpg" style="zoom:67%;" />
 
 
 
@@ -2550,7 +2550,7 @@ Web，在计算机领域指网络。像我们接触的 `WWW`，它是由 3 个�
 
 目录结构详解：
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat目录结构详解.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%AF%A6%E8%A7%A3.png)
 
 
 
@@ -2608,7 +2608,7 @@ Tomcat服务器的停止文件也在二进制文件目录bin中：shutdown.bat�
 
   * 进程很重要：修改自己的端口号。修改的是 Tomcat 目录下`\conf\server.xml`中的配置。
 
-    ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat-server.xml端口配置.png)
+    ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat-server.xml%E7%AB%AF%E5%8F%A3%E9%85%8D%E7%BD%AE.png)
     
     
 
@@ -2620,7 +2620,7 @@ Tomcat服务器的停止文件也在二进制文件目录bin中：shutdown.bat�
 
 Run -> Edit Configurations -> Templates -> Tomcat Server -> Local
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat-IDEA配置Tomcat.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat-IDEA%E9%85%8D%E7%BD%AETomcat.png)
 
 
 
@@ -2667,10 +2667,10 @@ Run -> Edit Configurations -> Templates -> Tomcat Server -> Local
 #### IDEA部署
 
 * 新建工程
-  <img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat-IEDA新建工程.png" style="zoom:67%;" />
+  <img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat-IEDA%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" style="zoom:67%;" />
 
 * 发布工程
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat-IDEA发布工程.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat-IDEA%E5%8F%91%E5%B8%83%E5%B7%A5%E7%A8%8B.png)
 
 * Run 
 
@@ -2708,7 +2708,7 @@ Run -> Edit Configurations -> Templates -> Tomcat Server -> Local
 
 Tomcat 核心组件架构图如下所示：
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat-核心组件架构图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat-%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 组件介绍：
 
@@ -2866,7 +2866,7 @@ Socket 是使用 TCP/IP 或者 UDP 协议在服务器与客户端之间进行传
 - **HTTP 协议：是在 TCP/IP 协议之上进一步封装的一层协议，关注数据传输的格式是否规范，底层的数据传输还是运用了 Socket 和 TCP/IP**
 
 Tomcat 和 Servlet 的关系：Servlet 的运行环境叫做 Web 容器或 Servlet 服务器，**Tomcat 是 Web 应用服务器，是一个 Servlet/JSP 容器**。Tomcat 作为 Servlet 容器，负责处理客户请求，把请求传送给 Servlet，并将 Servlet 的响应传送回给客户。而 Servlet 是一种运行在支持 Java 语言的服务器上的组件，Servlet 用来扩展 Java Web 服务器功能，提供非常安全的、可移植的、易于使用的 CGI 替代品
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Tomcat与Servlet的关系.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Tomcat%E4%B8%8EServlet%E7%9A%84%E5%85%B3%E7%B3%BB.png)
 
 
 
@@ -2888,7 +2888,7 @@ Servlet是SUN公司提供的一套规范，名称就叫Servlet规范，它也是
 
 4. 支持配置相关功能
 
-   ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Servlet类关系总视图.png)
+   ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Servlet%E7%B1%BB%E5%85%B3%E7%B3%BB%E6%80%BB%E8%A7%86%E5%9B%BE.png)
 
 
 
@@ -2900,7 +2900,7 @@ Servlet是SUN公司提供的一套规范，名称就叫Servlet规范，它也是
 
 创建 Web 工程 → 编写普通类继承 Servlet 相关类 → 重写方法
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Servlet入门案例执行.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Servlet%E5%85%A5%E9%97%A8%E6%A1%88%E4%BE%8B%E6%89%A7%E8%A1%8C.png)
 
 
 
@@ -2908,7 +2908,7 @@ Servlet执行过程分析：
 
 通过浏览器发送请求，请求首先到达Tomcat服务器，由服务器解析请求URL，然后在部署的应用列表中找到应用。然后找到web.xml配置文件，在web.xml中找到FirstServlet的配置（`<url-pattern>/<url-pattern>`），找到后执行service方法，最后由FirstServlet响应客户浏览器。整个过程如下图所示：
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Servlet执行过程图.jpg)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Servlet%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%9B%BE.jpg)
 
 
 
@@ -2942,7 +2942,7 @@ Servlet执行过程分析：
 
 Servlet 3.0 中的异步处理指的是允许Servlet重新发起一条新线程去调用 耗时业务方法，这样就可以避免等待
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Servlet3.0的异步处理.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Servlet3.0%E7%9A%84%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86.png)
 
 
 
@@ -3283,7 +3283,7 @@ ServletConfig 是 Servlet 的配置参数对象。在 Servlet 规范中，允许
 
 * 效果：
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/ServletConfig演示.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/ServletConfig%E6%BC%94%E7%A4%BA.png)
 
 
 
@@ -3311,7 +3311,7 @@ Servlet 规范中，共有4个域对象，ServletContext 是其中一个，web �
 
 数据共享：
 
-<img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/ServletContext共享数据.png" style="zoom:50%;" />
+<img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/ServletContext%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE.png" style="zoom:50%;" />
 
 获取ServletContext：
 
@@ -3488,7 +3488,7 @@ Servlet3.0 版本！不需要配置 web.xml
 
 Web服务器收到客户端的http请求，会针对每一次请求，分别创建一个用于代表请求的request对象、和代表响应的response对象。
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Servlet请求响应图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Servlet%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E5%9B%BE.png)
 
 
 
@@ -3508,7 +3508,7 @@ Request 作用：
 * 请求转发
 * 作为域对象存数据  
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Request请求对象的类视图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Request%E8%AF%B7%E6%B1%82%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E8%A7%86%E5%9B%BE.png)
 
 
 
@@ -3960,7 +3960,7 @@ Response 的作用：
 
 * 请求重定向
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Response响应类视图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Response%E5%93%8D%E5%BA%94%E7%B1%BB%E8%A7%86%E5%9B%BE.png)
 
 ***
 
@@ -4158,7 +4158,7 @@ public class ServletDemo04 extends HttpServlet {
 
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Response设置缓存时间.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Response%E8%AE%BE%E7%BD%AE%E7%BC%93%E5%AD%98%E6%97%B6%E9%97%B4.png)
 
 
 
@@ -4333,7 +4333,7 @@ public class ServletDemo08 extends HttpServlet {
 3. 请求转发可以和请求域对象共享数据，数据不会丢失
 4. 请求转发浏览器地址栏不变
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/重定向和请求转发对比图.jpg)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/%E9%87%8D%E5%AE%9A%E5%90%91%E5%92%8C%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg)
 
 
 
@@ -4432,7 +4432,7 @@ Cookie：客户端会话管理技术，把要共享的数据保存到了客户�
 
 作用：保存客户浏览器访问网站的相关内容（需要客户端不禁用 Cookie），从而在每次访问同一个内容时，先从本地缓存获取，使资源共享，提高效率。
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Cookie类讲解.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Cookie%E7%B1%BB%E8%AE%B2%E8%A7%A3.png)
 
 
 
@@ -4608,7 +4608,7 @@ HttpServletRequest类获取Session：
 | HttpSession getSession()              | 获取HttpSession对象                       |
 | HttpSession getSession(boolean creat) | 获取HttpSession对象，未获取到是否自动创建 |
 
-<img src="https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Session获取的两个方法.png" style="zoom: 80%;" />
+<img src="https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Session%E8%8E%B7%E5%8F%96%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%96%B9%E6%B3%95.png" style="zoom: 80%;" />
 
 
 
@@ -4830,7 +4830,7 @@ JSP部署在服务器上，可以处理客户端发送的请求，并根据请�
 
   客户端提交请求——Tomcat服务器解析请求地址——找到JSP页面——Tomcat将JSP页面翻译成Servlet的java文件——将翻译好的.java文件编译成.class文件——返回到客户浏览器上
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/JSP执行过程.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/JSP%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B.png)
 
 * 溯源，打开JSP翻译后的Java文件
 
@@ -4838,7 +4838,7 @@ JSP部署在服务器上，可以处理客户端发送的请求，并根据请�
 
   在文件中找到了输出页面的代码，本质都是用out.write()输出的JSP语句
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/Jsp的本质说明.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/Jsp%E7%9A%84%E6%9C%AC%E8%B4%A8%E8%AF%B4%E6%98%8E.png)
 
 
 
@@ -5034,7 +5034,7 @@ jsp中的隐式对象也并不是未声明，它是在翻译成.java文件时声
 
 * PageContext方法如下，页面域操作的方法定义在了PageContext的父类JspContext中
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/PageContext方法详解.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/PageContext%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3.png)
 
   
 
@@ -5065,7 +5065,7 @@ M : model， 通常用于封装数据，封装的是数据模型
 V :  view，通常用于展示数据。动态展示用jsp页面，静态数据展示用html
 C :  controller，通常用于处理请求和响应，一般指的是Servlet
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/MVC模型.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/MVC%E6%A8%A1%E5%9E%8B.png)
 
 
 
@@ -5234,7 +5234,7 @@ str：
 
 EL表达式中运算符：
 
-* 关系运算符：![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/EL表达式关系运算符.png)
+* 关系运算符：![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6.png)
 
 * 逻辑运算符：
 
@@ -5281,7 +5281,7 @@ EL表达式中运算符：
 
 ```
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/EL表达式运算符效果图.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BF%90%E7%AE%97%E7%AC%A6%E6%95%88%E6%9E%9C%E5%9B%BE.png)
 
 
 
@@ -6727,7 +6727,7 @@ DOM(Document Object Model)：文档对象模型。
 
 将 HTML 文档的各个组成部分，封装为对象。借助这些对象，可以对 HTML 文档进行增删改查的动态操作。
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/DOM介绍.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/DOM%E4%BB%8B%E7%BB%8D.png)
 
 
 
@@ -6895,11 +6895,11 @@ Attribute属性的操作：
 
 * 常用的事件：
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/JS常用的事件.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/JS%E5%B8%B8%E7%94%A8%E7%9A%84%E4%BA%8B%E4%BB%B6.png)
 
 * 更多的事件：
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/JS更多的事件.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/JS%E6%9B%B4%E5%A4%9A%E7%9A%84%E4%BA%8B%E4%BB%B6.png)
 
 
 
@@ -6960,7 +6960,7 @@ Attribute属性的操作：
 
 在姓名、年龄、性别三个文本框中填写信息后，添加到“学生信息表”列表（表格），点击删除后，删除该行数据，并且不需刷新
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/事件案例效果.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/%E4%BA%8B%E4%BB%B6%E6%A1%88%E4%BE%8B%E6%95%88%E6%9E%9C.png)
 
 
 
@@ -7376,7 +7376,7 @@ JSON(JavaScript Object Notation)：是一种轻量级的数据交换格式。
 
 * 创建格式：
   **name是字符串类型**
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/JSON创建格式.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/JSON%E5%88%9B%E5%BB%BA%E6%A0%BC%E5%BC%8F.png)
 
 * json常用方法
 
@@ -7545,7 +7545,7 @@ RegExp：
 
 使用 onsubmit 表单提交事件
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/表单校验.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C.png)
 
 ```html
 <form class="login-form" action="#" id="registered" method="get" autocomplete="off">
@@ -7597,7 +7597,7 @@ BOM(Browser Object Model)：浏览器对象模型。
 
 将浏览器的各个组成部分封装成不同的对象，方便我们进行操作。
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/BOM介绍.png)
+![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/BOM%E4%BB%8B%E7%BB%8D.png)
 
 
 
@@ -8296,7 +8296,7 @@ $("#btn5").click(function(){
 
 - 一般的网页如果需要更新内容，必需重新加载个页面。而 AJAX 通过浏览器与服务器进行少量数据交换，就可以使网页实现异步更新。也就是在不重新加载整个页 面的情况下，对网页的部分内容进行**局部更新**。
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/AJAX网页局部更新.png)
+  ![](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/AJAX%E7%BD%91%E9%A1%B5%E5%B1%80%E9%83%A8%E6%9B%B4%E6%96%B0.png)
 
 
 
@@ -8480,7 +8480,7 @@ $("#btn5").click(function(){
 
 ## 分页知识
 
-![分页知识](https://seazean.oss-cn-beijing.aliyuncs.com/img/Web/分页知识.png)
+![分页知识](https://jackchen-note.oss-cn-beijing.aliyuncs.com/Java/javaweb/%E5%88%86%E9%A1%B5%E7%9F%A5%E8%AF%86.png)
 
 
 

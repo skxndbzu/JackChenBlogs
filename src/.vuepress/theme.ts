@@ -8,14 +8,14 @@ export default hopeTheme({
 
   author: {
     name: "Jack-Chen",
-    url: "https://mister-hope.com",
+    url: "https://chemnminghe.top",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "skxndbzu",
 
   docsDir: "src",
 
@@ -40,21 +40,21 @@ export default hopeTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      Email: "email@chenminghe.top",
+      Email: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=615880048@qq.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       Gitee: "https://gitee.com/chen-minghe0",
       GitHub: "https://github.com/skxndbzu",
       // Gitlab: "https://example.com",
-      Gmail: "chenminghe0@gmail.com",
+      Gmail: "https://chenminghe0@gmail.com",
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
       // Lines: "https://example.com",
       // Linkedin: "https://example.com",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
-      // QQ: "615880048",
+      QQ: "tencent://message/?uin=615880048&Site=&Menu=yes",
       // Qzone: "https://example.com",
       // Reddit: "https://example.com",
       // Rss: "https://example.com",
@@ -65,10 +65,10 @@ export default hopeTheme({
       // Whatsapp: "https://example.com",
       // Youtube: "https://example.com",
       // Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
+      // VuePressThemeHope: {
+      //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+      //   link: "https://theme-hope.vuejs.press",
+      // },
     },
   },
 
