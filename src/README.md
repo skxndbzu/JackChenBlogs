@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 首页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+heroImage: https://jackchen-note.oss-cn-beijing.aliyuncs.com/touxiang/vue-color-avatar3.png
 heroText: 千里之行 始于足下
 heroFullScreen: true
 tagline: 程序员麻花

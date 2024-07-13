@@ -1,11 +1,11 @@
 ---
-title: Markdown 展示
+title: 大学生活
 icon: fab fa-markdown
 order: 2
 category:
-  - 使用指南
+  - 生活随笔
 tag:
-  - Markdown
+  - 生活随笔
 ---
 
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。

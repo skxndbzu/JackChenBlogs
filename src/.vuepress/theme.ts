@@ -13,7 +13,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://jackchen-note.oss-cn-beijing.aliyuncs.com/touxiang/vue-color-avatar3.png",
 
   repo: "skxndbzu",
 
@@ -31,7 +31,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "程序员麻花",
+    description: "汇聚点滴 凝聚成溪",
     intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
