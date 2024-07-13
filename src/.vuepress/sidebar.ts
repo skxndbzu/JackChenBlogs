@@ -1,9 +1,15 @@
 import {sidebar} from "vuepress-theme-hope";
 import {interviewExperience} from "./siderbar/interviewExperience.js";
+import {demo} from "./siderbar/demo.js";
+import {aboutMe} from "./siderbar/aboutMe.js";
 
 export default sidebar({
     // 应该把更精确的路径放置在前边
     "/interviewExperience/": interviewExperience,
+
+    "/aboutMe/": aboutMe,
+    // 配置演示,正式环境需注销
+    // "/demo/": demo,
     "/": [
         "",
         {
@@ -15,14 +21,14 @@ export default sidebar({
             // link: "abc/",
             children: "structure",
         },
-        // {
-        //     text: "面试专栏",
-        //     icon: "laptop-code",
-        //     collapsible: true,
-        //     prefix: "posts/面试准备/",
-        //     // link: "demo/",
-        //     children: "structure",
-        // },
+        {
+            text: "面试专栏",
+            icon: "laptop-code",
+            collapsible: true,
+            prefix: "posts/面试准备/",
+            // link: "demo/",
+            children: "structure",
+        },
         {
             text: "Java",
             icon: "book",

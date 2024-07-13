@@ -6,6 +6,7 @@ export default navbar([
   "/posts/",
   "/interviewExperience/",
   "/softwareTutorial/",
+  "/aboutMe/",
   // {
   //   text: "V2 文档",
   //   icon: "book",
