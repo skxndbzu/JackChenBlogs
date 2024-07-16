@@ -1,7 +1,7 @@
 ---
 title: 关于我
 index: false
-icon: laptop-code
+icon: guanyuzuozhe
 category:
   - 使用指南
 ---

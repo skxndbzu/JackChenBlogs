@@ -1,7 +1,7 @@
 ---
 title: 面试专栏
 index: false
-icon: laptop-code
+icon: flow-interview
 category:
   - 使用指南
 ---

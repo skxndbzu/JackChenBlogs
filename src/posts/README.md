@@ -1,7 +1,7 @@
 ---
 title: 学习笔记
 index: false
-icon: laptop-code
+icon: xuexibiji
 category:
   - 使用指南
 ---

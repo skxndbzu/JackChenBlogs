@@ -11,8 +11,17 @@ export default hopeTheme({
     url: "https://chemnminghe.top",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  // iconAssets: "fontawesome-with-brands",
 
+  // iconAssets: "//at.alicdn.com/t/c/font_2922463_o9q9dxmps9.css",
+  iconAssets: "//at.alicdn.com/t/c/font_4622374_lgjdpsdsc1a.css",
+  // iconAssets: [
+  //   "/base/my/font-icon/resource.js",
+  //   "https://example/my/fonr-icon/resouce.css",
+  //   "fontawesome-with-brands",
+  // ],
+  // // 你想要的 URL
+  // iconAssets: "/base/my/font-icon/resource.js",
   logo: "https://jackchen-note.oss-cn-beijing.aliyuncs.com/touxiang/vue-color-avatar3.png",
 
   repo: "skxndbzu",

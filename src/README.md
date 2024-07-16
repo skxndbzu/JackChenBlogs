@@ -1,7 +1,7 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: shouye
 title: 首页
 heroImage: https://jackchen-note.oss-cn-beijing.aliyuncs.com/touxiang/vue-color-avatar3.png
 heroText: 千里之行 始于足下

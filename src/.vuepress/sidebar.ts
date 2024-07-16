@@ -14,7 +14,7 @@ export default sidebar({
         "",
         {
             text: "必看",
-            icon: "laptop-code",
+            icon: "meiribikan",
             collapsible: true,
             prefix: "posts/必看/",
             // 点击"必看"汉字将要跳转的网址
@@ -23,7 +23,7 @@ export default sidebar({
         },
         {
             text: "面试专栏",
-            icon: "laptop-code",
+            icon: "zhenrenmianshi",
             collapsible: true,
             prefix: "posts/面试准备/",
             // link: "demo/",
@@ -31,28 +31,28 @@ export default sidebar({
         },
         {
             text: "Java",
-            icon: "book",
+            icon: "java",
             prefix: "posts/Java/",
             collapsible: true,
             children: "structure",
         },
         {
             text: "计算机基础",
-            icon: "book",
+            icon: "application--web",
             prefix: "posts/计算机基础/",
             collapsible: true,
             children: "structure",
         },
         {
             text: "系统设计",
-            icon: "book",
+            icon: "xitongsheji",
             prefix: "posts/系统设计/",
             collapsible: true,
             children: "structure",
         },
         {
             text: "数据库",
-            icon: "laptop-code",
+            icon: "jurassic_data",
             collapsible: true,
             prefix: "posts/数据库/",
             link: "demo/",
@@ -60,7 +60,7 @@ export default sidebar({
         },
         {
             text: "开发工具",
-            icon: "laptop-code",
+            icon: "kaifagongju",
             collapsible: true,
             prefix: "posts/开发工具/",
             link: "developmentTool/",
@@ -68,7 +68,7 @@ export default sidebar({
         },
         {
             text: "常用框架",
-            icon: "laptop-code",
+            icon: "yemiankuangjia_o",
             collapsible: true,
             prefix: "posts/常用框架/",
             link: "demo/",
@@ -76,39 +76,39 @@ export default sidebar({
         },
         {
             text: "前端",
-            icon: "laptop-code",
+            icon: "qianduan",
             collapsible: true,
             prefix: "posts/前端/",
             link: "demo/",
             children: "structure",
         },
-        {
-            text: "系统设计",
-            prefix: "posts/系统设计/",
-            collapsible: true,
-            children: [
-                "baz" /* /baz.html */,
-                {
-                    text: "Sub Group 1",
-                    collapsible: true,
-                    children: ["quz" /* /quz.html */, "xyzzy" /* /xyzzy.html */],
-                },
-                {
-                    text: "Sub Group 2",
-                    prefix: "corge/",
-                    collapsible: true,
-                    children: [
-                        "fred" /* /corge/fred.html */,
-                        "grault" /* /corge/grault.html */,
-                    ],
-                },
-                "foo" /* /foo.html */,
-            ],
-        },
+        // {
+        //     text: "系统设计",
+        //     prefix: "posts/系统设计/",
+        //     collapsible: true,
+        //     children: [
+        //         "baz" /* /baz.html */,
+        //         {
+        //             text: "Sub Group 1",
+        //             collapsible: true,
+        //             children: ["quz" /* /quz.html */, "xyzzy" /* /xyzzy.html */],
+        //         },
+        //         {
+        //             text: "Sub Group 2",
+        //             prefix: "corge/",
+        //             collapsible: true,
+        //             children: [
+        //                 "fred" /* /corge/fred.html */,
+        //                 "grault" /* /corge/grault.html */,
+        //             ],
+        //         },
+        //         "foo" /* /foo.html */,
+        //     ],
+        // },
         "intro",
         {
             text: "幻灯片",
-            icon: "person-chalkboard",
+            icon: "huandengpian-04",
             link: "https://plugin-md-enhance.vuejs.press/zh/guide/content/revealjs/demo.html",
         },
     ],
