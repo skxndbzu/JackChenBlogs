@@ -24,7 +24,7 @@ export default hopeTheme({
   // iconAssets: "/base/my/font-icon/resource.js",
   logo: "https://jackchen-note.oss-cn-beijing.aliyuncs.com/touxiang/vue-color-avatar3.png",
 
-  repo: "skxndbzu",
+  repo: "skxndbzu/JackChenBlogs",
 
   docsDir: "src",
 
