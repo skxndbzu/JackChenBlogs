@@ -2,11 +2,12 @@ import {sidebar} from "vuepress-theme-hope";
 import {interviewExperience} from "./siderbar/interviewExperience.js";
 import {demo} from "./siderbar/demo.js";
 import {aboutMe} from "./siderbar/aboutMe.js";
+import {software} from "./siderbar/software.js";
 
 export default sidebar({
     // 应该把更精确的路径放置在前边
     "/interviewExperience/": interviewExperience,
-
+    "/softwareTutorial/": software,
     "/aboutMe/": aboutMe,
     // 配置演示,正式环境需注销
     // "/demo/": demo,

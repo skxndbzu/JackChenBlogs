@@ -2,7 +2,7 @@
 title: Vue
 icon: pen-to-square
 order: 2
-date: 2022-01-01
+date: 2023-10-16
 category:
   - Vue
 tag:

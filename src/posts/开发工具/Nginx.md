@@ -1,7 +1,7 @@
 ---
 title: Nginx
 icon: pen-to-square
-date: 2022-01-01
+date: 2023-01-12
 category:
   - Nginx
 tag:
@@ -18,7 +18,7 @@ tag:
 
 Nginx（“engine x”）一个具有高性能的【HTTP】和【反向代理】的【WEB服务器】，同时也是一个【POP3/SMTP/IMAP代理服务器】，是由伊戈尔·赛索耶夫(俄罗斯人)使用C语言编写的，Nginx的第一个版本是2004年10月4号发布的0.1.0版本。另外值得一提的是伊戈尔·赛索耶夫将Nginx的源码进行了开源，这也为Nginx的发展提供了良好的保障。
 
-![1573470187616](assets/1573470187616.png)
+![](assets/1573470187616.png)
 
 #### 名词解释
 
@@ -44,11 +44,11 @@ IMAP(Internet Mail Access Protocol)交互式邮件存取协议，
 
 正向代理
 
-![1573489359728](assets/1573489359728.png)
+![](assets/1573489359728.png)
 
 反向代理
 
-![1573489653799](assets/1573489653799.png)
+![](assets/1573489653799.png)
 
 ### 常见服务器对比
 
@@ -60,7 +60,7 @@ Netcraft公司于1994年底在英国成立，多年来一直致力于互联网�
 
 我们先来看一组数据，我们先打开Nginx的官方网站  <http://nginx.org/>,找到Netcraft公司公布的数据，对当前主流服务器产品进行介绍。
 
-![1581394945120](assets/1581394945120.png)
+![](assets/1581394945120.png)
 
 上面这张图展示了2019年全球主流Web服务器的市场情况，其中有Apache、Microsoft-IIS、google Servers、Nginx、Tomcat等，而我们在了解新事物的时候，往往习惯通过类比来帮助自己理解事物的概貌。所以下面我们把几种常见的服务器来给大家简单介绍下：
 
@@ -108,7 +108,7 @@ Nginx采用的是多进程模式运行，其中有一个master主进程和N多�
 
 BSD是一个开源的许可证，世界上的开源许可证有很多，现在比较流行的有六种分别是GPL、BSD、MIT、Mozilla、Apache、LGPL。这六种的区别是什么，我们可以通过下面一张图来解释下：
 
-![1585139995444](assets/1585139995444.png)
+![](assets/1585139995444.png)
 
 Nginx本身是开源的，我们不仅可以免费的将Nginx应用在商业领域，而且还可以在项目中直接修改Nginx的源码来定制自己的特殊要求。这些点也都是Nginx为什么能吸引无数开发者继续为Nginx来贡献自己的智慧和青春。OpenRestry [Nginx+Lua]   Tengine[淘宝]
 
@@ -177,11 +177,11 @@ Nginx的官方网站为: http://nginx.org
 
 打开源码可以看到如下的页面内容
 
-![1580461114467](assets/1580461114467.png)
+![](assets/1580461114467.png)
 
 Nginx的官方下载网站为<http://nginx.org/en/download.html>，当然你也可以之间在首页选中右边的download进入版本下载网页。在下载页面我们会看到如下内容：
 
-![1580463222053](assets/1580463222053.png)
+![](assets/1580463222053.png)
 
 ### 获取Nginx源码
 
@@ -189,7 +189,7 @@ Nginx的官方下载网站为<http://nginx.org/en/download.html>，当然你也�
 
 打开上述网站，就可以查看到Nginx的所有版本，选中自己需要的版本进行下载。下载我们可以直接在windows上下载然后上传到服务器，也可以直接从服务器上下载，这个时候就需要准备一台服务器。
 
-### ![1580610584036](assets/1580610584036.png)
+### ![](assets/1580610584036.png)
 
 
 
@@ -211,7 +211,7 @@ MobaXterm
 
 我们可以使用`uname -a`命令来查询linux的内核版本。
 
-![1581416022481](assets/1581416022481.png)
+![](assets/1581416022481.png)
 
 (2)确保centos能联网
 
@@ -219,7 +219,7 @@ MobaXterm
 ping www.baidu.com
 ```
 
-![1585224061192](assets/1585224061192.png)
+![](assets/1585224061192.png)
 
 (3)确认关闭防火墙
 
@@ -241,7 +241,7 @@ selinux(security-enhanced linux),美国安全局对于强制访问控制的实�
 
 sestatus查看状态
 
-![1581419845687](assets/1581419845687.png)
+![](assets/1581419845687.png)
 
 如果查看不是disabled状态，我们可以通过修改配置文件来进行设置,修改SELINUX=disabled，然后重启下系统即可生效。
 
@@ -249,7 +249,7 @@ sestatus查看状态
 vim /etc/selinux/config
 ```
 
-![1581419902873](assets/1581419902873.png)
+![](assets/1581419902873.png)
 
 ### Nginx安装方式介绍
 
@@ -385,7 +385,7 @@ module_hotfixes=true
 yum list | grep nginx
 ```
 
-![1581416861684](assets/1581416861684.png)
+![](assets/1581416861684.png)
 
 （4）使用yum进行安装
 
@@ -399,7 +399,7 @@ yun install -y nginx
 whereis nginx
 ```
 
-![1581416981939](assets/1581416981939.png)
+![](assets/1581416981939.png)
 
 （6）启动测试
 
@@ -409,17 +409,17 @@ whereis nginx
 
 简单安装
 
-![1586016586042](assets/1586016586042.png)
+![](assets/1586016586042.png)
 
 yum安装
 
-![1586016605581](assets/1586016605581.png)
+![](assets/1586016605581.png)
 
 ##### 解压Nginx目录
 
 执行`tar -zxvf nginx-1.16.1.tar.gz`对下载的资源进行解压缩，进入压缩后的目录，可以看到如下结构
 
-![1581421319232](assets/1581421319232.png)
+![](assets/1581421319232.png)
 
 内容解释：
 
@@ -546,7 +546,7 @@ make clean
 
 在使用Nginx之前，我们先对安装好的Nginx目录文件进行一个分析，在这块给大家介绍一个工具tree，通过tree我们可以很方面的去查看centos系统上的文件目录结构，当然，如果想使用tree工具，就得先通过`yum install -y tree`来进行安装，安装成功后，可以通过执行`tree /usr/local/nginx`(tree后面跟的是Nginx的安装目录)，获取的结果如下：
 
-![1581439634265](assets/1581439634265.png)
+![](assets/1581439634265.png)
 
 conf:nginx所有配置文件目录
 
@@ -614,11 +614,11 @@ Nginx的工作方式?
 
 前面在提到Nginx的高性能，其实也和它的架构模式有关。Nginx默认采用的是多进程的方式来工作的，当将Nginx启动后，我们通过`ps -ef | grep nginx`命令可以查看到如下内容：
 
-![1581444289294](assets/1581444289294.png)
+![](assets/1581444289294.png)
 
 从上图中可以看到,Nginx后台进程中包含一个master进程和多个worker进程，master进程主要用来管理worker进程，包含接收外界的信息，并将接收到的信号发送给各个worker进程，监控worker进程的状态，当worker进程出现异常退出后，会自动重新启动新的worker进程。而worker进程则是专门用来处理用户请求的，各个worker进程之间是平等的并且相互独立，处理请求的机会也是一样的。nginx的进程模型，我们可以通过下图来说明下：
 
-![1581444603231](assets/1581444603231.png)
+![](assets/1581444603231.png)
 
 我们现在作为管理员，只需要通过给master进程发送信号就可以来控制Nginx,这个时候我们需要有两个前提条件，一个是要操作的master进程，一个是信号。
 
@@ -678,7 +678,7 @@ kill -USR2 PID / kill -USR2 `cat /usr/local/nginx/logs/nginx.pid`
 kill -QUIT PID / kill -QUIT `cat /usr/local/nginx/logs/nginx.pid.oldbin`
 ```
 
-![1586368250085](assets/1586368250085.png)
+![](assets/1586368250085.png)
 
 6. 发送WINCH信号给master进程,让master进程控制不让所有的work进程在接收新的请求了，请求处理完后关闭work进程。注意master进程不会被关闭掉
 
@@ -690,7 +690,7 @@ kill -WINCH PID /kill -WINCH`cat /usr/local/nginx/logs/nginx.pid`
 
 此方式是通过Nginx安装目录下的sbin下的可执行文件nginx来进行Nginx状态的控制，我们可以通过`nginx -h`来查看都有哪些参数可以用：
 
-![1581486604517](assets/1581486604517.png)
+![](assets/1581486604517.png)
 
 -?和-h:显示帮助信息
 
@@ -796,7 +796,7 @@ cp nginx /usr/local/nginx/sbin
 
 第三步:进入到安装目录，执行`make upgrade`
 
-![1581494652284](assets/1581494652284.png)
+![](assets/1581494652284.png)
 
 第四步:查看是否更新成功
 
@@ -889,7 +889,7 @@ http块中可以配置多个server块，每个server块又可以配置多个loca
 user www;
 ```
 
-![1586597350943](assets/1586597350943.png)
+![](assets/1586597350943.png)
 
 (2) 创建一个用户
 
@@ -991,7 +991,7 @@ worker_processes:用于配置Nginx生成工作进程的数量，这个是Nginx�
 
 如果将worker_processes设置成2，则会看到如下内容:
 
-![1581563242526](assets/1581563242526.png)
+![](assets/1581563242526.png)
 
 #### 其他指令
 
@@ -1042,7 +1042,7 @@ error_log:用来配置Nginx的错误日志存放路径
 
 这个配置主要可以用来解决常说的"惊群"问题。大致意思是在某一个时刻，客户端发来一个请求连接，Nginx后台是以多进程的工作模式，也就是说有多个worker进程会被同时唤醒，但是最终只会有一个进程可以获取到连接，如果每次唤醒的进程数目太多，就会影响Nginx的整体性能。如果将上述值设置为on(开启状态)，将会对多个Nginx进程接收连接进行序列号，一个个来唤醒接收，就防止了多个进程对连接的争抢。
 
-![1581566971955](assets/1581566971955.png)
+![](assets/1581566971955.png)
 
 （2）multi_accept:用来设置是否允许同时接收多个网络连接
 

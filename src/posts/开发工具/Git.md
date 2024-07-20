@@ -1,7 +1,7 @@
 ---
 title: Git
 icon: pen-to-square
-date: 2022-01-01
+date: 2023-05-18
 category:
   - Git
 tag:
