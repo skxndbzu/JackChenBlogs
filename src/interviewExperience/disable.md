@@ -1,5 +1,5 @@
 ---
-title: 阿里
+title: 北京鑫万家科技笔试
 icon: gears
 order: 4
 category:
@@ -20,7 +20,14 @@ next: false
 comment: false
 footer: false
 
-backtotop: false
+backtotop: falses
 ---
 
-简历初筛没过
+
+
+#### 笔试环节
+
+Java基础，异常，io流，i++和&& ，String的传递，MySQL建表到增删改查，查询结果降序排列
+
+
+

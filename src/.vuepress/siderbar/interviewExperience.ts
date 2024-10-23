@@ -2,12 +2,12 @@ import { arraySidebar } from "vuepress-theme-hope";
 
 export const interviewExperience = arraySidebar([
     {
-        text: "阿里",
+        text: "北京鑫万家科技笔试",
         link: "disable",
         icon: "book",
     },
     {
-        text: "腾讯",
+        text: "北京中科软",
         link: "encrypt.md",
         icon: "book",
     },

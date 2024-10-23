@@ -8087,10 +8087,7 @@ IDEA中创建一个模块，并引入依赖
 ```java
 package com.myspringwork.pojo;
 
-/**
- * @author 陈铭鹤
- * @version 1.0
- */
+/
 public class Account {
     private String actno;
     private Double balance;
@@ -8139,10 +8136,7 @@ import com.myspringwork.pojo.Account;
 
 import java.util.List;
 
-/**
- * @author 陈铭鹤
- * @version 1.0
- */
+/
 public interface AccountMapper {
 
     /**
@@ -8230,10 +8224,7 @@ import com.myspringwork.pojo.Account;
 
 import java.util.List;
 
-/**
- * @author 陈铭鹤
- * @version 1.0
- */
+/
 public interface AccountService {
     /**
      * 开户
@@ -8300,10 +8291,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * @author 陈铭鹤
- * @version 1.0
- */
+/
 
 @Transactional
 @Service("accountService")
