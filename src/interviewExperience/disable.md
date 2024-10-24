@@ -27,7 +27,7 @@ backtotop: falses
 
 #### 笔试环节
 
-Java基础，异常，io流，i++和&& ，String的传递，MySQL建表到增删改查，查询结果降序排列
+Java基础，异常，io流，i++和&& ，String的传递，MySQL建表到增删改查，查询结果降序排列，字符串修改字符集
 
 
 
