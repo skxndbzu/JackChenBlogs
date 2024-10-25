@@ -12,7 +12,7 @@ export const interviewExperience = arraySidebar([
         icon: "book",
     },
     {
-        text: "美团",
+        text: "安硕信息",
         link: "layout.md",
         icon: "book",
     },
