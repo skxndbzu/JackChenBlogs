@@ -17,7 +17,7 @@ export const interviewExperience = arraySidebar([
         icon: "book",
     },
     {
-        text: "京东",
+        text: "甘肃中工国际",
         link: "markdown.md",
         icon: "book",
     },
