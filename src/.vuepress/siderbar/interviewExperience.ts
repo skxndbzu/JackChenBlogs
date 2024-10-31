@@ -26,5 +26,10 @@ export const interviewExperience = arraySidebar([
         link: "page.md",
         icon: "book",
     },
+    {
+        text: "天津函数视界",
+        link: "天津函数视界.md",
+        icon: "book",
+    },
 
 ]);
