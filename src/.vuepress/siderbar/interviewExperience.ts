@@ -1,7 +1,6 @@
 import { arraySidebar } from "vuepress-theme-hope";
 
 export const interviewExperience = arraySidebar([
-
     {
         text: "南京中科软",
         link: "南京中科软",
