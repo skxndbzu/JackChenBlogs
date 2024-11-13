@@ -450,26 +450,26 @@ RocketMQ有一个可视化的dashboard，通过该控制台可以直观的查看
 >JAXB，Java Architechture for Xml Binding，用于XML绑定的Java技术，是一个业界标准，是一项可以根据XML Schema生成Java类的技术。
 
 ```xml
-<dependency>
-    <groupId>javax.xml.bind</groupId>
-    <artifactId>jaxb-api</artifactId>
-    <version>2.3.0</version>
-</dependency>
-<dependency>
-    <groupId>com.sun.xml.bind</groupId>
-    <artifactId>jaxb-impl</artifactId>
-    <version>2.3.0</version>
-</dependency>
-<dependency>
-    <groupId>com.sun.xml.bind</groupId>
-    <artifactId>jaxb-core</artifactId>
-    <version>2.3.0</version>
-</dependency>
-<dependency>
-    <groupId>javax.activation</groupId>
-    <artifactId>activation</artifactId>
-    <version>1.1.1</version>
-</dependency>
+< dependency>
+    < groupId>javax.xml.bind< /groupId>
+    < artifactId>jaxb-api< /artifactId>
+    < version>2.3.0< /version>
+< /dependency>
+< dependency>
+    < groupId>com.sun.xml.bind< /groupId>
+    < artifactId>jaxb-impl< /artifactId>
+    < version>2.3.0< /version>
+< /dependency>
+< dependency>
+    < groupId>com.sun.xml.bind< /groupId>
+    < artifactId>jaxb-core< /artifactId>
+    < version>2.3.0< /version>
+< /dependency>
+< dependency>
+    < groupId>javax.activation< /groupId>
+    < artifactId>activation< /artifactId>
+    < version>1.1.1< /version>
+< /dependency>
 ```
 
 ### 4 打包
@@ -1633,7 +1633,7 @@ SendResult sendResult = producer.send(message);
 ```java
 consumer.registerMessageListener(new MessageListenerConcurrently() {
     @Override
-    public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt>msgs,ConsumeConcurrentlyContext context) {
+    public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt>msgs,ConsumeConcurrentlyContext context) {
         for(MessageExt msg:msgs){
             String key = msg.getKeys();
             // 根据业务唯一标识Key做幂等处理
@@ -1785,18 +1785,18 @@ Producer对于消息的发送方式也有多种选择，不同的方式会产生
 导入rocketmq的client依赖。
 
 ```xml
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
-<dependencies>
-    <dependency>
-        <groupId>org.apache.rocketmq</groupId>
-        <artifactId>rocketmq-client</artifactId>
-        <version>4.8.0</version>
-    </dependency>
-</dependencies>
+< properties>
+    < project.build.sourceEncoding>UTF-8< /project.build.sourceEncoding>
+    < maven.compiler.source>1.8< /maven.compiler.source>
+    < maven.compiler.target>1.8< /maven.compiler.target>
+< /properties>
+< dependencies>
+    < dependency>
+        < groupId>org.apache.rocketmq< /groupId>
+        < artifactId>rocketmq-client< /artifactId>
+        < version>4.8.0< /version>
+    < /dependency>
+< /dependencies>
 ```
 
 #### 定义同步消息发送生产者
@@ -1815,7 +1815,7 @@ public class SyncProducer {
         // 开启生产者
         producer.start();
         // 生产并发送 100 条消息
-        for (int i = 0 ; i < 100 ; i++) {
+        for (int i = 0 ; i <  100 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("someTopic", "someTag", body);
             // 为消息指定key
@@ -1854,7 +1854,7 @@ public class AsyncProducer {
 
         producer.start();
 
-        for (int i = 0 ; i < 100 ; i++) {
+        for (int i = 0 ; i <  100 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             try {
             Message msg = new Message("myTopicA", "myTag", body);
@@ -1893,7 +1893,7 @@ public class OnewayProducer {
         producer.setNamesrvAddr("rocketmqOS:9876");
         producer.start();
 
-        for (int i = 0 ; i < 10 ; i++) {
+        for (int i = 0 ; i <  10 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("single", "someTag", body);
             // 单向发送
@@ -1928,7 +1928,7 @@ public class SomeConsumer {
             // 一旦broker中有了其订阅的消息就会触发该方法的执行，
             // 其返回值为当前consumer消费的状态
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs,ConsumeConcurrentlyContext context) {
                 // 逐条消费消息
                 for (MessageExt msg : msgs) {
                     System.out.println(msg);
@@ -2009,13 +2009,13 @@ public class OrderedProducer {
         DefaultMQProducer producer = new DefaultMQProducer("pg");
         producer.setNamesrvAddr("rocketmqOS:9876");
         producer.start();
-        for (int i = 0 ; i < 100 ; i++) {
+        for (int i = 0 ; i <  100 ; i++) {
             Integer orderId = i;
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("TopicA", "TagA", body);
             SendResult sendResult = producer.send(msg, new MessageQueueSelector() {
                 @Override
-                public MessageQueue select(List<MessageQueue> mqs,Message msg, Object arg) {
+                public MessageQueue select(List< MessageQueue> mqs,Message msg, Object arg) {
                         Integer id = (Integer) arg;
                         int index = id % mqs.size();
                         return mqs.get(index);
@@ -2036,7 +2036,7 @@ public void orderlyConsumer() throws Exception {
         // MessageListenerOrderly 顺序模式 单线程的  重试Integer.Max_Value21亿
         consumer.(new MessageListenerOrderly() {
             @Override
-            public ConsumeOrderlyStatus consumeMessage(List<MessageExt> msgs, ConsumeOrderlyContext context) {
+            public ConsumeOrderlyStatus consumeMessage(List< MessageExt> msgs, ConsumeOrderlyContext context) {
                 System.out.println("线程id:" + Thread.currentThread().getId());
                 System.out.println(new String(msgs.get(0).getBody()));
                 return ConsumeOrderlyStatus.SUCCESS;
@@ -2120,7 +2120,7 @@ public class DelayProducer {
         DefaultMQProducer producer = new DefaultMQProducer("pg");
         producer.setNamesrvAddr("rocketmqOS:9876");
         producer.start();
-        for (int i = 0 ; i < 10 ; i++) {
+        for (int i = 0 ; i <  10 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("TopicB", "someTag", body);
             // 指定消息延迟等级为 3 级，即延迟10s,具体等级时间查询官网
@@ -2146,7 +2146,7 @@ public class OtherConsumer {
         consumer.subscribe("TopicB", "*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs,ConsumeConcurrentlyContext context) {
             for (MessageExt msg : msgs) {
                     // 输出消息被消费的时间
                     System.out.print(new SimpleDateFormat("mm:ss").format(new Date()));
@@ -2376,7 +2376,7 @@ public class TransactionProducer {
         * @param workQueue 临时存放任务的队列，其参数就是队列的长度
         * @param threadFactory 线程工厂
         */
-        ExecutorService executorService = new ThreadPoolExecutor( 2 , 5 ,100 , TimeUnit.SECONDS,new ArrayBlockingQueue<Runnable>( 2000 ), new ThreadFactory() {
+        ExecutorService executorService = new ThreadPoolExecutor( 2 , 5 ,100 , TimeUnit.SECONDS,new ArrayBlockingQueue< Runnable>( 2000 ), new ThreadFactory() {
             @Override
             public Thread newThread(Runnable r) {
                 Thread thread = new Thread(r);
@@ -2390,7 +2390,7 @@ public class TransactionProducer {
         producer.setTransactionListener(new ICBCTransactionListener());
         producer.start();
         String[] tags = {"TAGA","TAGB","TAGC"};
-        for (int i = 0 ; i < 3 ; i++) {
+        for (int i = 0 ; i <  3 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("TTopic", tags[i], body);
             // 发送事务消息
@@ -2426,7 +2426,7 @@ public class SomeConsumer {
             // 一旦broker中有了其订阅的消息就会触发该方法的执行，
             // 其返回值为当前consumer消费的状态
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs,ConsumeConcurrentlyContext context) {
                 // 逐条消费消息
                 for (MessageExt msg : msgs) {
                     System.out.println(msg);
@@ -2496,33 +2496,33 @@ Consumer的pullBatchSize属性与consumeMessageBatchMaxSize属性是否设置的
     // 消息列表分割器：其只会处理每条消息的大小不超4M的情况。
     // 若存在某条消息，其本身大小大于4M，这个分割器无法处理，
     // 其直接将这条消息构成一个子列表返回。并没有再进行分割
-public class MessageListSplitter implements Iterator<List<Message>> {
+public class MessageListSplitter implements Iterator< List< Message>> {
     // 指定极限值为4M
     private final int SIZE_LIMIT =  4 * 1024 * 1024 ;
     // 存放所有要发送的消息
-    private final List<Message> messages;
+    private final List< Message> messages;
     // 要进行批量发送消息的小集合起始索引
     private int currIndex;
-    public MessageListSplitter(List<Message> messages) {
+    public MessageListSplitter(List< Message> messages) {
         this.messages = messages;
     }
     @Override
     public boolean hasNext() {
     // 判断当前开始遍历的消息索引要小于消息总数
-    return currIndex < messages.size();
+    return currIndex <  messages.size();
     }
     @Override
-    public List<Message> next() {
+    public List< Message> next() {
         int nextIndex = currIndex;
         // 记录当前要发送的这一小批次消息列表的大小
         int totalSize = 0 ;
-        for (; nextIndex < messages.size(); nextIndex++) {
+        for (; nextIndex <  messages.size(); nextIndex++) {
             // 获取当前遍历的消息
             Message message = messages.get(nextIndex);
             // 统计当前遍历的message的大小
             int tmpSize = message.getTopic().length() + message.getBody().length;
-            Map<String, String> properties = message.getProperties();
-            for (Map.Entry<String, String> entry :properties.entrySet()) {
+            Map< String, String> properties = message.getProperties();
+            for (Map.Entry< String, String> entry :properties.entrySet()) {
                 tmpSize += entry.getKey().length() +
                 entry.getValue().length();
             }
@@ -2543,7 +2543,7 @@ public class MessageListSplitter implements Iterator<List<Message>> {
 
         } // end-for
         // 获取当前messages列表的子集合[currIndex, nextIndex)
-        List<Message> subList = messages.subList(currIndex, nextIndex);
+        List< Message> subList = messages.subList(currIndex, nextIndex);
         // 下次遍历的开始索引
         currIndex = nextIndex;
         return subList;
@@ -2565,8 +2565,8 @@ public class BatchProducer {
         producer.start();
 
         // 定义要发送的消息集合
-        List<Message> messages = new ArrayList<>();
-        for (int i = 0 ; i < 100 ; i++) {
+        List< Message> messages = new ArrayList< >();
+        for (int i = 0 ; i <  100 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("someTopic", "someTag", body);
             messages.add(msg);
@@ -2576,7 +2576,7 @@ public class BatchProducer {
         MessageListSplitter splitter = new MessageListSplitter(messages);
         while (splitter.hasNext()) {
             try {
-                List<Message> listItem = splitter.next();
+                List< Message> listItem = splitter.next();
                 producer.send(listItem);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -2604,7 +2604,7 @@ public class BatchConsumer {
 
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs,ConsumeConcurrentlyContext context) {
                 //也可以选择只接受一个消息,因为该方法是并发执行的,所以接受一个消息也能把消息消费完
                 for (MessageExt msg : msgs) {
                     System.out.println(msg);
@@ -2652,8 +2652,8 @@ SQL过滤表达式中支持多种常量类型与运算符。
 
 支持的运算符有：
 
-* 数值比较：>，>=，<，<=，BETWEEN，=
-* 字符比较：=，<>，IN
+* 数值比较：>，>=，< ，< =，BETWEEN，=
+* 字符比较：=，< >，IN
 * 逻辑运算 ：AND，OR，NOT
 * NULL判断：IS NULL 或者 IS NOT NULL
 
@@ -2680,7 +2680,7 @@ public class FilterByTagProducer {
         producer.setNamesrvAddr("rocketmqOS:9876");
         producer.start();
         String[] tags = {"myTagA","myTagB","myTagC"};
-        for (int i = 0 ; i < 10 ; i++) {
+        for (int i = 0 ; i <  10 ; i++) {
             byte[] body = ("Hi," + i).getBytes();
             String tag = tags[i%tags.length];
             Message msg = new Message("myTopic",tag,body);
@@ -2704,7 +2704,7 @@ public class FilterByTagConsumer {
         consumer.subscribe("myTopic", "myTagA || myTagB");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs,ConsumeConcurrentlyContext context) {
                 for (MessageExt me:msgs){
                     System.out.println(me);
                 }
@@ -2725,7 +2725,7 @@ public class FilterBySQLProducer {
         DefaultMQProducer producer = new DefaultMQProducer("pg");
         producer.setNamesrvAddr("rocketmqOS:9876");
         producer.start();
-        for (int i = 0 ; i < 10 ; i++) {
+        for (int i = 0 ; i <  10 ; i++) {
             try {
                 byte[] body = ("Hi," + i).getBytes();
                 Message msg = new Message("myTopic", "myTag", body);
@@ -2752,7 +2752,7 @@ public class FilterBySQLConsumer {
         consumer.subscribe("myTopic", MessageSelector.bySql("age between 0 and 6"));
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 for (MessageExt me:msgs){
                     System.out.println(me);
                 }
@@ -2972,7 +2972,7 @@ public class IRetryTest {
         consumer.setMaxReconsumeTimes(2);
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 MessageExt messageExt = msgs.get(0);
                 System.out.println(new Date());
                 System.out.println(messageExt.getReconsumeTimes());
@@ -2994,7 +2994,7 @@ public class IRetryTest {
         consumer.subscribe("%DLQ%retry-consumer-group", "*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 MessageExt messageExt = msgs.get(0);
                 System.out.println(new Date());
                 System.out.println(new String(messageExt.getBody()));
@@ -3017,7 +3017,7 @@ public class IRetryTest {
         // 设定重试次数
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
+            public ConsumeConcurrentlyStatus consumeMessage(List< MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 MessageExt messageExt = msgs.get(0);
                 System.out.println(new Date());
                 // 业务处理

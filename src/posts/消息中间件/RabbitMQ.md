@@ -311,50 +311,50 @@ SpringAMQP提供了三个功能：
 在mq-demo这个父工程中，已经配置好了SpringAMQP相关的依赖：
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+< ?xml version="1.0" encoding="UTF-8"?>
+< project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+    < modelVersion>4.0.0< /modelVersion>
 
-    <groupId>cn.itcast.demo</groupId>
-    <artifactId>mq-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>publisher</module>
-        <module>consumer</module>
-    </modules>
-    <packaging>pom</packaging>
+    < groupId>cn.itcast.demo< /groupId>
+    < artifactId>mq-demo< /artifactId>
+    < version>1.0-SNAPSHOT< /version>
+    < modules>
+        < module>publisher< /module>
+        < module>consumer< /module>
+    < /modules>
+    < packaging>pom< /packaging>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.12</version>
-        <relativePath/>
-    </parent>
+    < parent>
+        < groupId>org.springframework.boot< /groupId>
+        < artifactId>spring-boot-starter-parent< /artifactId>
+        < version>2.7.12< /version>
+        < relativePath/>
+    < /parent>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    < properties>
+        < maven.compiler.source>8< /maven.compiler.source>
+        < maven.compiler.target>8< /maven.compiler.target>
+    < /properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <!--AMQP依赖，包含RabbitMQ-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-        <!--单元测试-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-    </dependencies>
-</project>
+    < dependencies>
+        < dependency>
+            < groupId>org.projectlombok< /groupId>
+            < artifactId>lombok< /artifactId>
+        < /dependency>
+        < !--AMQP依赖，包含RabbitMQ-->
+        < dependency>
+            < groupId>org.springframework.boot< /groupId>
+            < artifactId>spring-boot-starter-amqp< /artifactId>
+        < /dependency>
+        < !--单元测试-->
+        < dependency>
+            < groupId>org.springframework.boot< /groupId>
+            < artifactId>spring-boot-starter-test< /artifactId>
+        < /dependency>
+    < /dependencies>
+< /project>
 ```
 
 因此，子工程中就可以直接使用SpringAMQP了。
@@ -494,7 +494,7 @@ public void testWorkQueue() throws InterruptedException {
     String queueName = "simple.queue";
     // 消息
     String message = "hello, message_";
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i <  50; i++) {
         // 发送消息，每20毫秒发送一次，相当于每秒发送50条消息
         rabbitTemplate.convertAndSend(queueName, message + i);
         Thread.sleep(20);
@@ -1189,7 +1189,7 @@ public class MessageConfig {
 @Test
 public void testSendMap() throws InterruptedException {
     // 准备消息
-    Map<String,Object> msg = new HashMap<>();
+    Map< String,Object> msg = new HashMap< >();
     msg.put("name", "柳岩");
     msg.put("age", 21);
     // 发送消息
@@ -1208,11 +1208,11 @@ public void testSendMap() throws InterruptedException {
 在`publisher`和`consumer`两个服务中都引入依赖：
 
 ```xml
-<dependency>
-    <groupId>com.fasterxml.jackson.dataformat</groupId>
-    <artifactId>jackson-dataformat-xml</artifactId>
-    <version>2.9.10</version>
-</dependency>
+< dependency>
+    < groupId>com.fasterxml.jackson.dataformat< /groupId>
+    < artifactId>jackson-dataformat-xml< /artifactId>
+    < version>2.9.10< /version>
+< /dependency>
 ```
 
 注意，如果项目中引入了`spring-boot-starter-web`依赖，则无需再次引入`Jackson`依赖。
@@ -1242,7 +1242,7 @@ public MessageConverter messageConverter(){
 
 ```java
 @RabbitListener(queues = "object.queue")
-public void listenSimpleQueueMessage(Map<String, Object> msg) throws InterruptedException {
+public void listenSimpleQueueMessage(Map< String, Object> msg) throws InterruptedException {
     System.out.println("消费者接收到object.queue消息：【" + msg + "】");
 }
 ```
@@ -1266,11 +1266,11 @@ public void listenSimpleQueueMessage(Map<String, Object> msg) throws Interrupted
 1）添加依赖：
 
 ```xml
-  <!--消息发送-->
-  <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-amqp</artifactId>
-  </dependency>
+  < !--消息发送-->
+  < dependency>
+      < groupId>org.springframework.boot< /groupId>
+      < artifactId>spring-boot-starter-amqp< /artifactId>
+  < /dependency>
 ```
 
 2）配置MQ地址：
@@ -1558,7 +1558,7 @@ void testPublisherConfirm() {
     // 1.创建CorrelationData
     CorrelationData cd = new CorrelationData();
     // 2.给Future添加ConfirmCallback
-    cd.getFuture().addCallback(new ListenableFutureCallback<CorrelationData.Confirm>() {
+    cd.getFuture().addCallback(new ListenableFutureCallback< CorrelationData.Confirm>() {
         @Override
         public void onFailure(Throwable ex) {
             // 2.1.Future发生异常时的处理逻辑，基本不会触发
@@ -1743,7 +1743,7 @@ rabbitmqctl set_policy Lazy "^lazy-queue$" '{"queue-mode":"lazy"}' --apply-to qu
 > - o.s.amqp…MessageConversionException: Can be thrown when converting the incoming message payload using a MessageConverter.
 > - o.s.messaging…MessageConversionException: Can be thrown by the conversion service if additional conversion is required when mapping to a @RabbitListener method.
 > - o.s.messaging…MethodArgumentNotValidException: Can be thrown if validation (for example, @Valid) is used in the listener and the validation fails.
-> - o.s.messaging…MethodArgumentTypeMismatchException: Can be thrown if the inbound message was converted to a type that is not correct for the target method. For example, the parameter is declared as Message<Foo> but Message<Bar> is received.
+> - o.s.messaging…MethodArgumentTypeMismatchException: Can be thrown if the inbound message was converted to a type that is not correct for the target method. For example, the parameter is declared as Message< Foo> but Message< Bar> is received.
 > - java.lang.NoSuchMethodException: Added in version 1.6.3.
 > - java.lang.ClassCastException: Added in version 1.6.3.
 
@@ -2281,7 +2281,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class MultiDelayMessage<T> {
+public class MultiDelayMessage< T> {
     /**
      * 消息体
      */
@@ -2289,14 +2289,14 @@ public class MultiDelayMessage<T> {
     /**
      * 记录延迟时间的集合
      */
-    private List<Long> delayMillis;
+    private List< Long> delayMillis;
 
-    public MultiDelayMessage(T data, List<Long> delayMillis) {
+    public MultiDelayMessage(T data, List< Long> delayMillis) {
         this.data = data;
         this.delayMillis = delayMillis;
     }
-    public static <T> MultiDelayMessage<T> of(T data, Long ... delayMillis){
-        return new MultiDelayMessage<>(data, CollUtils.newArrayList(delayMillis));
+    public static < T> MultiDelayMessage< T> of(T data, Long ... delayMillis){
+        return new MultiDelayMessage< >(data, CollUtils.newArrayList(delayMillis));
     }
 
     /**
@@ -2365,11 +2365,11 @@ spring:
 在`trade-service`模块的`pom.xml`中引入amqp的依赖：
 
 ```xml
-  <!--amqp-->
-  <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-amqp</artifactId>
-  </dependency>
+  < !--amqp-->
+  < dependency>
+      < groupId>org.springframework.boot< /groupId>
+      < artifactId>spring-boot-starter-amqp< /artifactId>
+  < /dependency>
 ```
 
 2）改造下单业务
@@ -2399,9 +2399,9 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 /**
- * <p>
+ * < p>
  * 支付订单
- * </p>
+ * < /p>
  */
 @Data
 @ApiModel(description = "支付单数据传输实体")
@@ -2476,7 +2476,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.openfeign.FallbackFactory;
 
 @Slf4j
-public class PayClientFallback implements FallbackFactory<PayClient> {
+public class PayClientFallback implements FallbackFactory< PayClient> {
     @Override
     public PayClient create(Throwable cause) {
         return new PayClient() {
@@ -2542,7 +2542,7 @@ public class OrderStatusListener {
             exchange = @Exchange(name = MqConstants.DELAY_EXCHANGE, type = ExchangeTypes.TOPIC),
             key = MqConstants.DELAY_ORDER_ROUTING_KEY
     ))
-    public void listenOrderCheckDelayMessage(MultiDelayMessage<Long> msg) {
+    public void listenOrderCheckDelayMessage(MultiDelayMessage< Long> msg) {
         // 1.获取消息中的订单id
         Long orderId = msg.getData();
         // 2.查询订单，判断状态：1是未支付，大于1则是已支付或已关闭
